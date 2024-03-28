@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="icon" type="image/png" href="./assets/briefcase.webp">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaquerries.css">
+    <link rel="stylesheet" href="./script.js">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Faith Ekechi Onyinyechi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Open-source">Open-source-Contributions </a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav >
+        
+    <nav id="hamburger-nav">
+        <div class="logo">Faith Ekechi Onyinyechi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" > About </a></li>
+                <li><a href="#Open-source" onclick="toggleMenu()"> Open-source </a></li>
+                <li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="picture-container">
+            <img src="/assets/cimg.jpg" alt="Faith Ekechi's Profile picture" class="img1">
+        </div>
+        <div class="section-text">
+            <p class="section-text-para1"> Hello i'm </p>
+            <h1 class="title">Faith Ekechi!</h1>
+            <p class="section-text-para2">Frontend developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='https://drive.google.com/file/d/1Pvk6isk9pV6ltDsbyHqvhq0FN30xUT1C/view?usp=sharing'">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/faith-ekechi-onyinyechi-162379236/ ' " />
+                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/the-Kings-daughter ' " />
+                <img src="./assets/gitlab-fill.png" alt="My gitlab profile" class="icon" onclick="location.href='https://gitlab.com/the-Kings-daughter ' " />
+            </div>
+        </div>
+        <div>
+            <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='./#about'" />
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text-para1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        Hello! I am thrilled to welcome you to my portfolio🤗. I am a passionate Electrical/Electronic Engineer who recently transitioned into tech and not long after, Open-source. My journey into open-source has been nothing but exhilirating. Contributing to a community as welcoming and vast as Fedora, I have been able to harness a lot of skill-sets i didn't know i possessed. I want to say a big Thank you to the Outreachy Internship organizers for this great opportunity. I feel fulfilled already!😄
+                    </p>
+                    <br>
+                </div>
+                <div class="about-container">
+                   <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3> <br>
+                        <p><b> Electrical/Electronic Engineering Internship at</b><br> Skyrun International</p> <br>
+                        <p><b> Women Techsters Fellowship Class of 2024 Trainie at</b><br> Tech4Dev</p>
+                    </div> 
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3> <br>
+                        <p><b>University of Cross River State </b> <br> B.Eng in Electrical/Electronic Engineering<br> </p> <br>
+                        <p><b>Women Techsters Fellowship Class of 2024 </b> <br>  Software development (Frontend)
+                            <br> </p>
+                    </div>
+                </div>
+              
+            </div>
+           
+        </div>
+      
+        <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='./#Open-source'"
+        />
+    </section>
+    <section id="Open-source">
+        <p class="section-text-para1">Explore My</p>
+        <h1 class="title">Open-source Contributions</h1>
+
+        <div class="text-container">
+            <p>
+          Throughout the past 4 weeks as an Outreachy applicant, i have actively applied my existing knowledge, expanded it further and played a small role if i might add 😅 in advancing open-source initiatives. This portfolio showcases my engagements with Fedora projects during the Outreachy Internship contribution period. It brings to the limelight a number of projects i've been involved in and the few contributons i was able to make! <br> <br>
+           <em>The Pre-requites are the necessary tasks which every applicant aiming to qualify for the Fedora Community Architect Outreachy Internship must complete.</em> 
+            </p>
+        </div>
+        <div class="open-source-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="open-source-sub-title">Pre-requisites </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/140#note_1829233545" target="_blank" class="issues-link">#140</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/153#note_1811443960" target="_blank" class="issues-link">#153</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/154#note_1813677087" target="_blank" class="issues-link">#154</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/155#note_1813989338" target="_blank" class="issues-link">#155</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/156#note_1814011631" target="_blank" class="issues-link">#156</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/157#note_1816699684" target="_blank" class="issues-link">#157</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="open-source-sub-title">Other contributions</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/138#note_1806224746" target="_blank" class="issues-link">#138</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/144#note_1804525959" target="_blank" class="issues-link">#144</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/147#note_1835159153" target="_blank" class="issues-link">#147</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/158#note_1829231400" target="_blank" class="issues-link">#158</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/169#note_1835274492" target="_blank" class="issues-link">#169</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Issue <a href="https://gitlab.com/fedora/marketing/marketing-planning/-/issues/170#note_1835106811" target="_blank" class="issues-link">#170</a> </h3>
+                                <P>Completed</P>
+                            </div>
+                        </article>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-container">
+            <h2 class="sub-title">Google documents and Blog posts</h2> <br>
+            <ul class="links">
+                <li><a href="https://it143w.wordpress.com/2024/03/13/discover-fedora%F0%9F%98%B1%F0%9F%A4%AF/" class="issues-link" target="_blank">Issue #155: </a> I created a blog and wrote my fourth blog post introducing my audience to the Fedora community.</li>
+                <li><a href="https://it143w.wordpress.com/2024/03/15/do-you-know-about-outreachy-%f0%9f%a4%94/" class="issues-link" target="_blank">Issue #157: </a>I came up with a comprehensive and very clear onboarding guide for future Outreachy Applicants.</li>
+                <li><a href="https://docs.google.com/document/d/16dV-Bl10EAaMrWovhanpZYKMbtPrNXSkzsAlxrQHsxw/edit" class="issues-link" target="_blank">Issue #138: </a>I was able to draft out some social media posts ideas for Fedora 40 release.</li>
+                <li><a href="https://it143w.wordpress.com/2024/03/24/blog-post-evaluation/" class="issues-link" target="_blank">Issue #158: </a>I put together an evaluation of my blog. Taking into consideration the impact of my social media publicity as well as the engagement rate on each post.</li>
+                <li><a href="https://wordpress.com/post/it143w.wordpress.com/326" class="issues-link" target="_blank">Issue #170: </a> I organized a timeline of activities that i would love to carry out throughout my Outreachy Internship period.</li>
+            </ul>
+        </div>
+        <div class="text-container">
+            <h2 class="sub-title">My Biggest Contribution</h2> <br>
+            <p>
+                Honestly, I will say that my biggest contribution comprises of every little assistance i gave throughout this period. Ranging from helping my fellow applicants settle into the Fedora project at the beginning of the contributions stage to the google documents i drafted, the blog posts, everything! It really has been a wonderful and overwhelming 1 month. Thank you to Outreachy and Fedora for the experience. It won't be forgotten.
+            </p>
+        </div>
+       
+
+        <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='./#contact'"
+        />
+        
+    </section>
+   
+    <section id="contact">
+        <p class="section-text-para1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets//email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:faithekechi143@gmail.com">Faithekechi143@gmail.com </a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets//linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/faith-ekechi-onyinyechi-162379236/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Open-source">Open-source-Contributions </a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 The King's Daughter. All Rights Reserved.</p>
+    </footer>
+
+  
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
