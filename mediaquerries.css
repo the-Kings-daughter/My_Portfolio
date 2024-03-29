@@ -18,12 +18,20 @@
         display: flex;
     }
     #Open-source, .open-source-details-container {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     #profile, .section-container {
         display: block;
         position: static;
+      
+    }
+    section#profile {
+        height: 45vh;
+    }
+
+    section#contact {
+        height: 40vh;
     }
 
     .arrow {
@@ -38,7 +46,7 @@
     .picture-container {
         width: 275px;
         height: 275px;
-        margin: 0 auto 2rem;
+        margin: 0 auto 1rem;
     }
     .picture-container img{
         width: 100%;
@@ -48,13 +56,23 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    section#profile {
+        height: 60vh;
+    }
+    section#contact {
+        height: 40vh;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
     #contact, footer {
         height: 40vh;
     }
-    #profile {
-        height: 83vh;
+    section#profile {
+        height: 80vh;
         margin-bottom: 0;
 
     }
@@ -104,3 +122,38 @@
 
 
 
+@media screen and (max-width: 450px) {
+    section#profile {
+        height: 75vh;
+    }
+
+  
+}
+
+@media screen and (max-width: 375px) {
+    section#profile {
+        height: 87vh;
+    }
+
+    .picture-container {
+        width: 225px;
+        height: 225px;
+        margin: 0 auto 1rem;
+    }
+  
+}
+
+@media screen and (max-width: 320px) {
+    section#profile {
+        height: 120vh;
+    }
+
+    .picture-container {
+        width: 225px;
+        height: 225px;
+        margin: 0 auto 1rem;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+}
